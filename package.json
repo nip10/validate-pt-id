@@ -1,5 +1,5 @@
 {
-  "name": "ts-package",
+  "name": "validate-pt-id",
   "license": "MIT",
   "version": "1.0.0",
   "author": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nip10/ts-package.git"
+    "url": "https://github.com/nip10/validate-pt-id.git"
   },
   "bugs": {
-    "url": "https://github.com/nip10/ts-package/issues"
+    "url": "https://github.com/nip10/validate-pt-id/issues"
   },
-  "homepage": "https://github.com/nip10/ts-package#readme",
+  "homepage": "https://github.com/nip10/validate-pt-id#readme",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

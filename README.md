@@ -1,28 +1,47 @@
-# TS Package Template
+# Validate Portuguese Ids
 
-This is a template for creating a new TS package. It contains a basic
-directory structure and a few files to get you started.
+[![npm version](https://badge.fury.io/js/validate-pt-id.svg)](https://badge.fury.io/js/validate-pt-id)
 
-## What's included
+Validate and generate CC (Citizen Identity Card) and NIF (Personal Tax Number) numbers.
 
-- [x] TypeScript
-- [x] Build tool: Tsup
-- [x] Linter: Eslint
-- [x] Code formatter: Prettier
-- [x] Test suite: Vitest
-- [x] Versioning: Changesets
-- [x] CI/CD: Github Actions
+Supports ESM and CommonJS (require/import).
 
-## Structure
+## Installation
 
-The main parts of the template are:
+```shell
+$ yarn add validate-pt-id
+```
 
-    .
-    ├── lib
-    │   ├── index.ts
-    |── index.ts
-    ├── package.json
+```shell
+$ npm install validate-pt-id
+```
 
-All logic should be implemented in the `lib` directory. The `index.ts` file
-in the root directory only exports the `lib` directory. This is to make it easy
-to import the package in other packages.
+```shell
+$ pnpm install validate-pt-id
+```
+
+## Usage
+
+```typescript
+import { generateNif } from 'validate-pt-id';
+
+const nif = generateNif(); // 238043266
+```
+
+```typescript
+import { validateNif } from 'validate-pt-id';
+
+const isValidNif = validateNif('238043266'); // true
+```
+
+```typescript
+import { generateCc } from 'validate-pt-id';
+
+const cc = generateCc(); // 168893797ZY2
+```
+
+```typescript
+import { validateCc } from 'validate-pt-id';
+
+const isValidCc = validateCc('168893797ZY2'); // true
+```
